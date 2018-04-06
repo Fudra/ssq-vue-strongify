@@ -161,12 +161,4 @@ describe('Strongify.vue', () => {
     wrapper.setMethods({ '$t': (a) => {return a}} );
     // wrapper.vm.$t = (a) => {return a} ;
   }
-
-  // helper
-
-  let see = (text, selector) => {
-    let wrapper = selector ? wrapper.find(selector) : wrapper;
-
-    expect(wrap.html()).toContain(text);
-  }
 });
